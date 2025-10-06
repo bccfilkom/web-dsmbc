@@ -21,9 +21,9 @@ const Navbar: React.FC = () => {
   const router = useRouter();
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const BCC_BASE_URL = process.env.NEXT_PUBLIC_BCC_BASE_URL;
+  const BCC_BASE_URL = "https://bccfilkom.ub.ac.id/";
   const handleClick = () => {
-    router.push(`${BCC_BASE_URL}/register`);
+    router.push(`https://docs.google.com/forms/d/e/1FAIpQLSfrYhzfidJe7IktQKQjDJbgG39XwlvLuzQBfi-NjYMpwYguWA/viewform`);
     setTimeout(() => {
       return;
     }, 1000);
