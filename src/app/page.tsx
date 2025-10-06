@@ -66,6 +66,82 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <div className="flex flex-col gap-10 mb-44">
+          <div className="flex gap-4 items-center justify-center text-light_blue">
+            <hr className="border-light_blue border-1 w-16"/>
+            <h1 className="text-center font-semibold text-xl">ABOUT</h1>
+            <hr className="border-light_blue border-1 w-16"/>
+          </div>
+          <div className="flex flex-col gap-5 justify-center">
+            <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl text-slate-700 text-center">
+              About <span className="text-orange-500">Data Science</span> Mini <br /> Bootcamp 2025
+            </h1>
+            <p className="font-medium text-base lg:text-xl text-gray-600 text-center w-[364px] lg:w-[860px] mx-auto">
+              <span className="font-bold">Data Science Mini Bootcamp 2025 "Data Detective:</span> Uncovering Truths with Data" is a 3-day intensive program that will give you insights into Data Science and allow you to practice it directly. In this mini bootcamp, you will learn how to use Python and Pandas to process, analyze, and visualize data. You will also learn how to predict data using various machine learning models.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-10 mb-44">
+          <div className="flex gap-4 items-center justify-center text-light_blue">
+            <hr className="border-light_blue border-1 w-16"/>
+            <h1 className="text-center font-semibold text-xl">TIMELINE</h1>
+            <hr className="border-light_blue border-1 w-16"/>
+          </div>
+        </div>
+        <div className="flex flex-col gap-10 mb-44">
+          <div className="flex gap-4 items-center justify-center text-light_blue">
+            <hr className="border-light_blue border-1 w-16"/>
+            <h1 className="text-center font-semibold text-xl">LEARNING PATH</h1>
+            <hr className="border-light_blue border-1 w-16"/>
+          </div>
+          <div className="flex gap-5 justify-center">
+            <div className="flex flex-col gap-8 items-center justify-center px-10 py-20 border-[1px] rounded-[32px] w-[400px] h-[496px] bg-neutral-50 border-gray-200">
+              <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                <Image
+                  src="/images/startup.svg"
+                  alt="-"
+                  className="justify-center"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div className="flex flex-col gap-4 items-center justify-center text-center">
+                <h1 className="font-medium text-4xl text-slate-700">DAY 1</h1>
+                <p className="font-medium text-2xl text-gray-600">The Case Begins</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-8 items-center justify-center px-10 py-20 border-[1px] rounded-[32px] w-[400px] h-[496px] bg-neutral-50 border-gray-200">
+              <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                <Image
+                  src="/images/folder-search.svg"
+                  alt="-"
+                  className="justify-center"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div className="flex flex-col gap-4 items-center justify-center text-center">
+                <h1 className="font-medium text-4xl text-slate-700">DAY 2</h1>
+                <p className="font-medium text-2xl text-gray-600">Uncovering Clues in the Data Through Investigation</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-8 items-center justify-center px-10 py-20 border-[1px] rounded-[32px] w-[400px] h-[496px] bg-neutral-50 border-gray-200">
+              <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                <Image
+                  src="/images/puzzle-piece.svg"
+                  alt="-"
+                  className="justify-center"
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div className="flex flex-col gap-4 items-center justify-center text-center">
+                <h1 className="font-medium text-4xl text-slate-700">DAY 3</h1>
+                <p className="font-medium text-2xl text-gray-600">Solving the Mystery by Making Predictions with Data</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
