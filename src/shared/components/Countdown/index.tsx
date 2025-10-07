@@ -58,7 +58,7 @@ const Renderer = ({
   } else {
     return (
       <>
-        <span className="flex gap-10 font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-600 text-clip">
+        <span className="flex gap-10 font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-700 text-clip">
             <div className="flex flex-col gap-2 items-center justify-center">
                 <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
                     {String(hours + days * 24).padStart(3, "0")}
