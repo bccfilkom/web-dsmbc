@@ -8,6 +8,7 @@ import CountdownSection from "@/shared/components/Countdown";
 import { BiCalendar, BiTime } from "react-icons/bi";
 import { Label } from "@/shared/components/Label/index";
 import AccordionFaq from "@/shared/components/faq";
+import Timeline from "@/shared/components/Timeline";
 
 export default function AboutPage() {
   const handleClickRegister = () => {
@@ -16,10 +17,17 @@ export default function AboutPage() {
       return;
     }, 1000);
   }
+  
+  const handleClickDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/images/startup.svg";
+    link.download = "startup.svg";
+    link.click();
+  };
   return (
     <>
       <Navbar />
-      <div className="px-24 py-40">
+      <div className="px-24 pt-40">
         <div className="flex mb-44 w-full">
           <div className="flex gap-16">
             <Image
@@ -31,7 +39,7 @@ export default function AboutPage() {
               />
               <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-3">
-                  <Label text="Data Science"/>
+                  <Label text="Data Science" className=" bg-orange-500 bg-opacity-20 text-orange-500 text-sm"/>
                   <h1 className="font-semibold text-5xl text-slate-700">Data Science Mini Bootcamp 2025</h1>
                   <h2 className="font-medium text-2xl text-slate-700">"Data Detective: Uncovering Truths with Data"</h2>
                 </div>
@@ -64,7 +72,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex justify-center gap-4">
-              <Button variant="primary" className="h-12">
+              <Button variant="primary" className="h-12" onClick={handleClickDownload}>
                 Download Guidelines
               </Button>
               <Button variant="secondary" className="h-12" onClick={handleClickRegister}>
@@ -94,6 +102,7 @@ export default function AboutPage() {
             <h1 className="text-center font-semibold text-xl">TIMELINE</h1>
             <hr className="border-light_blue border-1 w-16"/>
           </div>
+          <Timeline></Timeline>
         </div>
         <div className="flex flex-col gap-10 mb-44">
           <div className="flex gap-4 items-center justify-center text-light_blue">
@@ -300,7 +309,7 @@ export default function AboutPage() {
             <p className="font-medium text-2xl text-neutral-50 text-center mb-10">
               Learn Data Science, try AI Models, and join a data competition all in one intensive bootcamp from <span className="font-bold">FILKOM BCC UB</span>
             </p>
-            <Label text="Limited Quota, Register Now!" className="bg-error-10 text-error-primary bg-opacity-100"/>
+            <Label text="Limited Quota, Register Now!" className="bg-error-10 text-error-primary bg-opacity-100 text-sm"/>
             <Button variant="secondary" className="mt-10" onClick={handleClickRegister}>Register Now →</Button>
           </div>
       </div>
@@ -319,6 +328,15 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      <img src="/images/bg-2.svg" alt="" className="-z-10 absolute right-0 top-[402px]"/>
+      <img src="/images/bg-3.svg" alt="" className="-z-10 absolute left-10 top-[700px]"/>
+      <img src="/images/bg-4.svg" alt="" className="-z-10 absolute -left-6 top-[1394px]"/>
+      <img src="/images/bg-5.svg" alt="" className="-z-10 absolute right-8 top-[1346px] rotate-45"/>
+      <img src="/images/bg-5.svg" alt="" className="-z-10 absolute right-32 top-[1515px]"/>
+      <img src="/images/bg-5.svg" alt="" className="-z-10 absolute right-6 top-[1698px] rotate-12"/>
+      <img src="/images/bg-6.svg" alt="" className="-z-10 absolute right-0 top-[2270px]"/>
+      <img src="/images/bg-7.svg" alt="" className="-z-10 absolute left-72 top-[3264px]"/>
+      <img src="/images/bg-8.svg" alt="" className="-z-10 absolute right-0 top-[6130px]"/>
       <Footer />
     </>
   );

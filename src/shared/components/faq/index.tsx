@@ -38,6 +38,8 @@ const AccordionFaq: React.FC = () => {
                 width="90%"
                 variant="h5"
                 component="h5"
+                fontFamily={"work sans, sans-serif"}
+                color='#143045'
                 sx={{
                   fontWeight: '600',
                   fontSize: { xs: '16px', sm: '24px' },
@@ -52,6 +54,8 @@ const AccordionFaq: React.FC = () => {
                 variant="body1"
                 textAlign="justify"
                 component="p"
+                fontFamily={"work sans, sans-serif"}
+                color='#465159'
                 sx={{
                   fontWeight: '500',
                   fontSize: { xs: '14px', sm: '16px' },
