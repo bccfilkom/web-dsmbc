@@ -24,7 +24,7 @@ const AccordionFaq: React.FC = () => {
   return (
     <Box
       sx={{
-        mx: { xs: "20px", sm: "24px", md: "auto" },
+        mx: "auto",
         px: { xs: 2, md: 0 },
         justifyContent: "center",
         width: "100%",
