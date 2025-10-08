@@ -38,7 +38,7 @@ export default function AboutPage() {
     <>
       <Navbar />
       <div className="px-6 pt-28 md:px-24 md:pt-40">
-        <div className="flex mb-28 lg:mb-44 w-full">
+        <div className="flex w-full">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
             <Image
               src="/images/Photo1.svg"
@@ -60,7 +60,7 @@ export default function AboutPage() {
               </div>
           </div>
         </div>
-        <div id="countdown" className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">
+        <div id="countdown" className="flex flex-col gap-8 lg:gap-10 py-28 lg:py-44">
           <div className="flex gap-4 items-center justify-center text-light_blue">
             <hr className="border-light_blue border-1 w-16"/>
             <h1 className="text-center font-semibold text-base lg:text-xl">COUNTDOWN</h1>
