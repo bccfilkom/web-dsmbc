@@ -27,9 +27,9 @@ const Renderer = ({
   if (completed) {
     return (
       <>
-        <span className="flex gap-10 font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-5xl text-gray-600 text-clip">
+        <span className="flex gap-auto lg:gap-10 font-semibold text-4xl lg:text-6xl text-slate-700 text-clip">
             <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
+                <div className="flex w-28 h-28 lg:w-52 lg:h-52 border-4 border-orange-500 rounded-3xl lg:rounded-[32px] items-center justify-center text-center">
                     0
                 </div>
                 <div className="font-semibold text-sm">
@@ -37,7 +37,7 @@ const Renderer = ({
                 </div>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
+                <div className="flex w-28 h-28 lg:w-52 lg:h-52 border-4 border-orange-500 rounded-3xl lg:rounded-[32px] items-center justify-center text-center">
                     0 
                 </div>
                 <div className="font-semibold text-sm">
@@ -45,7 +45,7 @@ const Renderer = ({
                 </div>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
+                <div className="flex w-28 h-28 lg:w-52 lg:h-52 border-4 border-orange-500 rounded-3xl lg:rounded-[32px] items-center justify-center text-center">
                     0 
                 </div>
                 <div className="font-semibold text-sm">
@@ -58,9 +58,9 @@ const Renderer = ({
   } else {
     return (
       <>
-        <span className="flex gap-10 font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-slate-700 text-clip">
+        <span className="flex gap-6 lg:gap-10 font-semibold text-4xl lg:text-6xl text-slate-700 text-clip">
             <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
+                <div className="flex w-28 h-28 lg:w-52 lg:h-52 border-4 border-orange-500 rounded-3xl lg:rounded-[32px] items-center justify-center text-center">
                     {String(hours + days * 24).padStart(3, "0")}
                 </div>
                 <div className="font-semibold text-sm">
@@ -68,7 +68,7 @@ const Renderer = ({
                 </div>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
+                <div className="flex w-28 h-28 lg:w-52 lg:h-52 border-4 border-orange-500 rounded-3xl lg:rounded-[32px] items-center justify-center text-center">
                     {String(minutes).padStart(2, "0")} 
                 </div>
                 <div className="font-semibold text-sm">
@@ -76,7 +76,7 @@ const Renderer = ({
                 </div>
             </div>
             <div className="flex flex-col gap-2 items-center justify-center">
-                <div className="flex w-52 h-52 border-4 border-orange-500 rounded-[32px] items-center justify-center text-center">
+                <div className="flex w-28 h-28 lg:w-52 lg:h-52 border-4 border-orange-500 rounded-3xl lg:rounded-[32px] items-center justify-center text-center">
                     {String(seconds).padStart(2, "0")} 
                 </div>
                 <div className="font-semibold text-sm">

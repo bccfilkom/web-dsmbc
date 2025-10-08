@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
     >
       <Image src="/images/BCC.svg" alt="BCC Logo" width={117} height={48} />
 
-      <div className="mx-4 hidden space-x-4 lg:flex">
+      <div className="mx-2 hidden space-x-2 lg:flex">
         {links.map((link: LinkType) => (
           <NavLink
             key={link.name}
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
       </div>
 
       <div className="hidden lg:block">
-        <Button onClick={handleClick} className="border-none px-6 py-3" variant="primary">
+        <Button onClick={handleClick} className="border-none px-4 py-3 text-xs" variant="primary">
           Request as Client
         </Button>
       </div>
