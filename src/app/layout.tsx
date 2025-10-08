@@ -2,6 +2,11 @@ import { ClientProvider } from '@/shared/providers';
 import "./globals.css";
 import BackgroundDecorations from "@/shared/components/Background";
 
+export const metadata = {
+  title: 'DSMBC 2025',
+  description: 'Data Science Mini Bootcamp by BCC FILKOM UB',
+};
+
 export default function RootLayout({
   children,
 }: {

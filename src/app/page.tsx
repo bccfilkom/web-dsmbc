@@ -11,6 +11,7 @@ import AccordionFaq from "@/shared/components/faq";
 import Timeline from "@/shared/components/Timeline";
 import BackgroundDecorations from "@/shared/components/Background";
 import { Gallery } from "@/shared/components/Gallery";
+import BenefitSection from "@/shared/components/Benefits";
 
 export default function AboutPage() {
   const handleClickRegister = () => {
@@ -25,6 +26,13 @@ export default function AboutPage() {
     link.href = "/images/startup.svg";
     link.download = "startup.svg";
     link.click();
+  };
+
+  const handleClickScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
   return (
     <>
@@ -46,13 +54,13 @@ export default function AboutPage() {
                   <h2 className="font-medium text-xl lg:text-2xl text-slate-700">&quot;Data Detective: Uncovering Truths with Data&quot;</h2>
                 </div>
                 <p className="font-medium text-base lg:text-xl text-gray-600">Explore the world of Data Science and learn the steps to process, analyze, and predict from data. In these 3 days, you will experience firsthand how data can be transformed into real insights and solutions.</p>
-                <Button variant="secondary" className="w-36 h-12">
+                <Button variant="secondary" className="w-36 h-12" onClick={() => handleClickScroll("countdown")}>
                   Get Started
                 </Button>
               </div>
           </div>
         </div>
-        <div className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">
+        <div id="countdown" className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">
           <div className="flex gap-4 items-center justify-center text-light_blue">
             <hr className="border-light_blue border-1 w-16"/>
             <h1 className="text-center font-semibold text-base lg:text-xl">COUNTDOWN</h1>
@@ -93,7 +101,7 @@ export default function AboutPage() {
             <h1 className="font-semibold text-2xl lg:text-4xl text-slate-700 text-center">
               About <span className="text-orange-500">Data Science</span> Mini <br /> Bootcamp 2025
             </h1>
-            <p className="font-medium text-base lg:text-xl text-gray-600 text-center w-[364px] lg:w-[860px] mx-auto">
+            <p className="font-medium text-base lg:text-xl text-gray-600 text-center mx-auto lg:mx-64">
               <span className="font-bold">Data Science Mini Bootcamp 2025 &quot;Data Detective:</span> Uncovering Truths with Data&quot; is a 3-day intensive program that will give you insights into Data Science and allow you to practice it directly. In this mini bootcamp, you will learn how to use Python and Pandas to process, analyze, and visualize data. You will also learn how to predict data using various machine learning models.
             </p>
           </div>
@@ -124,8 +132,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 0</h1>
-                <p className="font-medium text-base lg:text-2xl text-gray-600">The Case Begins</p>
+                <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 0</h1>
+                <p className="font-medium text-sm lg:text-2xl text-gray-600">The Case Begins</p>
               </div>
             </div>
             <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
@@ -139,8 +147,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 1</h1>
-                <p className="font-medium text-base lg:text-2xl text-gray-600">Uncovering Clues in the Data Through Investigation</p>
+                <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 1</h1>
+                <p className="font-medium text-sm lg:text-2xl text-gray-600">Uncovering Clues in the Data Through Investigation</p>
               </div>
             </div>
             <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
@@ -154,8 +162,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 2</h1>
-                <p className="font-medium text-base lg:text-2xl text-gray-600">Solving the Mystery by Making Predictions with Data</p>
+                <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 2</h1>
+                <p className="font-medium text-sm lg:text-2xl text-gray-600">Solving the Mystery by Making Predictions with Data</p>
               </div>
             </div>
           </div>
@@ -178,60 +186,7 @@ export default function AboutPage() {
               height={114}
             />
           </div>
-          <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-none lg:flex gap-3 md:gap-4 lg:gap-5 justify-center mx-auto lg:mx-0">
-            <div className="flex flex-col gap-4 lg:gap-6 px-5 lg:px-7 py-6 lg:py-10 rounded-xl w-[176px] h-[240px] lg:w-[295px] lg:h-[330px] bg-light_blue">
-              <Image
-                src="/images/images-3.svg"
-                alt="-"
-                className="justify-left lg:w-[60px] lg:h-[60px]"
-                width={40}
-                height={40}
-              />
-              <div className="flex flex-col gap-1 lg:gap-4 text-neutral-50">
-                <h1 className="font-semibold text-base lg:text-2xl">Upgrading Your Skills</h1>
-                <p className="font-medium text-sm lg:text-xl">Enhance your technical & analytical skill abilities</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 lg:gap-6 px-5 lg:px-7 py-6 lg:py-10 rounded-xl w-[176px] h-[240px] lg:w-[295px] lg:h-[330px] bg-neutral-50 border-[1px] border-gray-200">
-              <Image
-                src="/images/images-2.svg"
-                alt="-"
-                className="justify-left lg:w-[60px] lg:h-[60px]"
-                width={40}
-                height={40}
-              />
-              <div className="flex flex-col gap-1 lg:gap-4">
-                <h1 className="font-semibold text-base lg:text-2xl text-slate-700">Exclusive Mentorship</h1>
-                <p className="font-medium text-sm lg:text-xl text-gray-600">Direct access to experienced professional mentors</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 lg:gap-6 px-5 lg:px-7 py-6 lg:py-10 rounded-xl w-[176px] h-[240px] lg:w-[295px] lg:h-[330px] bg-neutral-50 border-[1px] border-gray-200">
-              <Image
-                src="/images/images-1.svg"
-                alt="-"
-                className="justify-left lg:w-[60px] lg:h-[60px]"
-                width={40}
-                height={40}
-              />
-              <div className="flex flex-col gap-1 lg:gap-4">
-                <h1 className="font-semibold text-base lg:text-2xl text-slate-700">Certificate of Completion</h1>
-                <p className="font-medium text-sm lg:text-xl text-gray-600">Official Winner Certificate – BCC FILKOM UB Kaggle Competition</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-4 lg:gap-6 px-5 lg:px-7 py-6 lg:py-10 rounded-xl w-[176px] h-[240px] lg:w-[295px] lg:h-[330px] bg-neutral-50 border-[1px] border-gray-200">
-              <Image
-                src="/images/images-4.svg"
-                alt="-"
-                className="justify-left lg:w-[60px] lg:h-[60px]"
-                width={40}
-                height={40}
-              />
-              <div className="flex flex-col gap-1 lg:gap-4">
-                <h1 className="font-semibold text-base lg:text-2xl text-slate-700">Getting More Networking</h1>
-                <p className="font-medium text-sm lg:text-xl text-gray-600">Meet peers & professionals in the data science field</p>
-              </div>
-            </div>
-          </div>
+          <BenefitSection/>
         </div>
         <div className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">
           <div className="flex gap-4 items-center justify-end text-light_blue">
@@ -244,7 +199,7 @@ export default function AboutPage() {
           <Gallery></Gallery>
         </div>
       </div>
-      <div className="flex max-w-screen-2xl mb-28 lg:mb-44 px-6 py-10 lg:px-48 lg:py-20 relative bg-gradient-to-b from-[#143045] to-[#183F5C]">
+      <div className="flex max-w-screen mb-28 lg:mb-44 px-6 py-10 lg:px-48 lg:py-20 relative bg-gradient-to-b from-[#143045] to-[#183F5C]">
           <Image
             src="/images/bg-1.svg"
             alt=""
