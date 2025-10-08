@@ -60,13 +60,13 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-6 lg:gap-10">
             <CountdownSection 
-              closeRegistration={new Date("2025-10-19T00:00:00")}
+              closeRegistration={new Date("2025-10-18T00:00:00")}
               onComplete={() => {}}
             />
             <div className="flex gap-4 items-center justify-center text-gray-400 font-semibold text-sm">
               <div className="flex gap-1 items-center">
                 <BiCalendar size={24} />
-                <p>19 OKTOBER 2025</p>
+                <p>18 OKTOBER 2025</p>
               </div>
               <div className="flex gap-1 items-center">
                 <BiTime size={24}/>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 1</h1>
+                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 0</h1>
                 <p className="font-medium text-base lg:text-2xl text-gray-600">The Case Begins</p>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 2</h1>
+                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 1</h1>
                 <p className="font-medium text-base lg:text-2xl text-gray-600">Uncovering Clues in the Data Through Investigation</p>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 3</h1>
+                <h1 className="font-medium text-2xl lg:text-4xl text-slate-700">DAY 2</h1>
                 <p className="font-medium text-base lg:text-2xl text-gray-600">Solving the Mystery by Making Predictions with Data</p>
               </div>
             </div>

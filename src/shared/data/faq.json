@@ -5,26 +5,26 @@
     },
     {
         "question": "If I'm not an IT major, will I find it difficult?",
-        "answer": "-"
+        "answer": "Don't worry! Our materials are designed to be easy to follow, even for those who are new to the world of data."
     },
     {
         "question": "What is the quota for DSMBC?",
-        "answer": "-"
+        "answer": "The quota is still confidential, please wait for the official announcement!"
     },
     {
         "question": "Are all DSMBC sessions held online?",
-        "answer": "-"
+        "answer": "Not all. Day 0 will be online via Zoom, while Day 1 & 2 will be offline."
     },
     {
         "question": "Where does DSMBC take place?",
-        "answer": "-"
+        "answer": "● Day 0: Online (Zoom)\n● Day 1 & 2: Faculty of Computer Science, Universitas Brawijaya"
     },
     {
         "question": "Will I get a certificate at the end of the session?",
-        "answer": "-"
+        "answer": "Yes! All participants who attend the entire series of events will receive a certificate, and winners of the Kaggle Competition will receive a special certificate!"
     },
     {
         "question": "If I don't attend all the activities, can I still get a participant certificate?",
-        "answer": "-"
+        "answer": "Nope. Participant certificates are only given if you attend all events. If there’s an unavoidable issue, please contact the CP listed below."
     }
 ]

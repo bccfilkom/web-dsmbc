@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { Label } from "../Label";
 
 const timelineData = [
-  { date: "xx - xx October 2025", title: "Open Registration", type: "start" },
-  { date: "19 October 2025", title: "Day 1" },
-  { date: "22 October 2025", title: "Day 2" },
-  { date: "24 October 2025", title: "Day 3" },
-  { date: "xx October 2025", title: "Kaggle Competition" },
-  { date: "xx October 2025", title: "Awarding 🏆", type: "end" },
+  { date: "11 - 17 October 2025", title: "Open Registration", type: "start" },
+  { date: "18 October 2025", title: "Day 0" },
+  { date: "22 October 2025", title: "Day 1" },
+  { date: "24 October 2025", title: "Day 2" },
+  { date: "24 - 31 October 2025", title: "Kaggle Competition" },
+  { date: "2 November 2025", title: "Awarding 🏆", type: "end" },
 ];
 
 export default function Timeline() {
