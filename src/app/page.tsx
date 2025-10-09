@@ -23,8 +23,8 @@ export default function AboutPage() {
   
   const handleClickDownload = () => {
     const link = document.createElement("a");
-    link.href = "/images/startup.svg";
-    link.download = "startup.svg";
+    link.href = "/files/Guidebook DSMBC 2025.pdf";
+    link.download = "Guidebook DSMBC 2025.pdf";
     link.click();
   };
 
