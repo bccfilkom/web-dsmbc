@@ -1,23 +1,25 @@
 "use client";
 
+import { withBasePath } from "@/shared/utils/imagePath";
+
 const benefits = [
   {
-    icon: "/images/image-1.svg",
+    icon: withBasePath("/images/image-1.svg"),
     title: "Upgrading Your Skills",
     desc: "Enhance your technical & analytical skill abilities",
   },
   {
-    icon: "/images/image-2.svg",
+    icon: withBasePath("/images/image-2.svg"),
     title: "Exclusive Mentorship",
     desc: "Direct access to experienced professional mentors",
   },
   {
-    icon: "/images/image-3.svg",
+    icon: withBasePath("/images/image-3.svg"),
     title: "Certificate of Completion",
     desc: "Official Winner Certificate – BCC FILKOM UB Kaggle Competition",
   },
   {
-    icon: "/images/image-4.svg",
+    icon: withBasePath("/images/image-4.svg"),
     title: "Getting More Networking",
     desc: "Meet peers & professionals in the data science field",
   },

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Label } from "../Label";
+import { withBasePath } from "@/shared/utils/imagePath";
 
 const timelineData = [
   { date: "11 - 17 October 2025", title: "Open Registration", type: "start" },
@@ -43,7 +44,7 @@ export default function Timeline() {
                 text={item.date}
                 className={`text-sm text-white mb-1 ${
                   item.type === "start"
-                    ? `bg-[url('/images/bg-chip.svg')]`
+                    ? `bg-[url(${withBasePath("/images/bg-chip.svg")})]`
                     : "bg-light_blue"
                 }`}
               />
@@ -59,7 +60,7 @@ export default function Timeline() {
                 text={item.date}
                 className={`text-xl text-center w-fit text-white ${
                   item.type === "start"
-                    ? `bg-[url('/images/bg-chip.svg')]`
+                    ? `bg-[url(${withBasePath("/images/bg-chip.svg")})]`
                     : "bg-light_blue"
                 }`}
               />
@@ -92,7 +93,7 @@ export default function Timeline() {
                 text={item.date}
                 className={`text-xl text-center w-fit text-white ${
                   item.type === "start"
-                    ? `bg-[url('/images/bg-chip.svg')]`
+                    ? `bg-[url(${withBasePath("/images/bg-chip.svg")})]`
                     : "bg-light_blue"
                 }`}
               />
