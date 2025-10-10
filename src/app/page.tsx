@@ -12,6 +12,7 @@ import Timeline from "@/shared/components/Timeline";
 import BackgroundDecorations from "@/shared/components/Background";
 import { Gallery } from "@/shared/components/Gallery";
 import BenefitSection from "@/shared/components/Benefits";
+import { withBasePath } from "@/shared/utils/imagePath";
 
 export default function AboutPage() {
   const handleClickRegister = () => {
@@ -23,7 +24,7 @@ export default function AboutPage() {
   
   const handleClickDownload = () => {
     const link = document.createElement("a");
-    link.href = "/files/Guidebook DSMBC 2025.pdf";
+    link.href = encodeURI(withBasePath("/files/Guidebook DSMBC 2025.pdf"));
     link.download = "Guidebook DSMBC 2025.pdf";
     link.click();
   };
@@ -41,7 +42,7 @@ export default function AboutPage() {
         <div className="flex w-full">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
             <Image
-              src="/images/Photo1.svg"
+              src={withBasePath("/images/Photo1.svg")}
               alt="DSMBC 2025"
               className="text-center mx-auto items-center lg:justify-left lg:w-[505px] md:h-[464px]"
               width={364}
@@ -124,7 +125,7 @@ export default function AboutPage() {
             <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
               <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
                 <Image
-                  src="/images/startup.svg"
+                  src={withBasePath("/images/startup.svg")}
                   alt="-"
                   className="justify-center lg:w-12 lg:h-12"
                   width={24}
@@ -139,7 +140,7 @@ export default function AboutPage() {
             <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
               <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
                 <Image
-                  src="/images/folder-search.svg"
+                  src={withBasePath("/images/folder-search.svg")}
                   alt="-"
                   className="justify-center lg:w-12 lg:h-12"
                   width={24}
@@ -154,7 +155,7 @@ export default function AboutPage() {
             <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
               <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
                 <Image
-                  src="/images/puzzle-piece.svg"
+                  src={withBasePath("/images/puzzle-piece.svg")}
                   alt="-"
                   className="justify-center lg:w-12 lg:h-12"
                   width={24}
@@ -179,7 +180,7 @@ export default function AboutPage() {
                 <span className="text-orange-500">Benefits</span>  You<br /> Will Get</h1>
             </div>
             <Image
-              src="/images/pattern-1.svg"
+              src={withBasePath("/images/pattern-1.svg")}
               alt="-"
               className="justify-end items-end lg:w-[85px] lg:h-[143px]"
               width={57}
@@ -201,7 +202,7 @@ export default function AboutPage() {
       </div>
       <div className="flex max-w-screen mb-28 lg:mb-44 px-6 py-10 lg:px-48 lg:py-20 relative bg-gradient-to-b from-[#143045] to-[#183F5C]">
           <Image
-            src="/images/bg-1.svg"
+            src={withBasePath("/images/bg-1.svg")}
             alt=""
             className="absolute left-0 bottom-0 opacity-80 hidden lg:block"
             width={1440}
@@ -210,7 +211,7 @@ export default function AboutPage() {
 
           <div className="flex flex-col justify-center items-center z-10">
             <Image
-              src="/images/mask-group.svg"
+              src={withBasePath("/images/mask-group.svg")}
               alt="DSMBC 2025"
               className="justify-center lg:h-40 lg:w-40 mb-10 lg:mb-14"
               width={80}

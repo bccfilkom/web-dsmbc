@@ -10,6 +10,7 @@ import { CiMenuFries } from "react-icons/ci";
 import NavLink from "./NavLinks";
 import { TfiClose } from "react-icons/tfi";
 import links from "../../data/links.json";
+import { withBasePath } from "@/shared/utils/imagePath";
 
 type LinkType = {
   name: string;
@@ -43,7 +44,7 @@ const Navbar: React.FC = () => {
       className={`fixed left-0 right-0 flex items-center justify-between gap-12 p-4 px-10 transition-colors duration-300 lg:px-24 z-20 ${isScrolled ? "bg-dark_blue bg-opacity-90" : "bg-dark_blue"
         }`}
     >
-      <Image src="/images/BCC.svg" alt="BCC Logo" width={117} height={48} />
+      <Image src={withBasePath("/images/BCC.svg")} alt="BCC Logo" width={117} height={48} />
 
       <div className="mx-2 hidden space-x-2 lg:flex">
         {links.map((link: LinkType) => (
@@ -93,7 +94,7 @@ const Navbar: React.FC = () => {
         } lg:hidden`}
       >
         <div className="flex items-center justify-between py-4">
-          <Image src="/images/BCC.svg" alt="BCC Logo" width={117} height={48} />
+          <Image src={withBasePath("/images/BCC.svg")} alt="BCC Logo" width={117} height={48} />
         </div>
 
         <ul className="flex flex-col space-y-4 py-4 text-sm text-white">
