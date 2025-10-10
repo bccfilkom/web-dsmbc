@@ -1,6 +1,7 @@
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
+  output: "standalone",
   reactStrictMode: true,
   basePath: isProd ? "/dsmbc" : "",
   assetPrefix: isProd ? "/dsmbc/" : "",
