@@ -43,10 +43,17 @@ export default function Timeline() {
               <Label
                 text={item.date}
                 className={`text-sm text-white mb-1 ${
-                  item.type === "start"
-                    ? `bg-[url(${withBasePath("/images/bg-chip.svg")})]`
-                    : "bg-light_blue"
+                  item.type == "start" ? "" : "bg-light_blue"
                 }`}
+                style={
+                  item.type === "start"
+                    ? {
+                        backgroundImage: `url(${withBasePath("/images/bg-chip.svg")})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }
+                    : undefined
+                }
               />
               <div className="font-medium text-gray-700 text-base">
                 {item.title}
@@ -59,10 +66,13 @@ export default function Timeline() {
               <Label
                 text={item.date}
                 className={`text-xl text-center w-fit text-white ${
-                  item.type === "start"
-                    ? `bg-[url(${withBasePath("/images/bg-chip.svg")})]`
-                    : "bg-light_blue"
+                  item.type === "start" ? "" : "bg-light_blue"
                 }`}
+                style={
+                  item.type === "start"
+                    ? { backgroundImage: `url(${withBasePath("/images/bg-chip.svg")})` }
+                    : undefined
+                }
               />
             </div>
           ) : (
@@ -92,10 +102,13 @@ export default function Timeline() {
               <Label
                 text={item.date}
                 className={`text-xl text-center w-fit text-white ${
-                  item.type === "start"
-                    ? `bg-[url(${withBasePath("/images/bg-chip.svg")})]`
-                    : "bg-light_blue"
+                  item.type === "start" ? "" : "bg-light_blue"
                 }`}
+                style={
+                  item.type === "start"
+                    ? { backgroundImage: `url(${withBasePath("/images/bg-chip.svg")})` }
+                    : undefined
+                }
               />
             </div>
           )}
