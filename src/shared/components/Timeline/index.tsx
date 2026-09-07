@@ -6,11 +6,11 @@ import { withBasePath } from "@/shared/utils/imagePath";
 
 const timelineData = [
   { date: "TBA", title: "Open Registration", type: "start" },
-  { date: "18 October 2025", title: "Day 0" },
-  { date: "22 October 2025", title: "Day 1" },
-  { date: "24 October 2025", title: "Day 2" },
-  { date: "24 - 31 October 2025", title: "Kaggle Competition" },
-  { date: "2 November 2025", title: "Awarding KaggleWar🏆", type: "end" },
+  { date: "12 October 2026", title: "Day 1" },
+  { date: "14 October 2026", title: "Day 2" },
+  { date: "16 October 2026", title: "Day 3" },
+  { date: "17 - 23 October 2026", title: "The Awakening of the Golem" },
+  { date: "24 October 2026", title: "The Final Odyssey🏆", type: "end" },
 ];
 
 export default function Timeline() {
