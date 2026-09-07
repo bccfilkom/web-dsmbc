@@ -5,7 +5,7 @@ import { Label } from "../Label";
 import { withBasePath } from "@/shared/utils/imagePath";
 
 const timelineData = [
-  { date: "11 - 17 October 2025", title: "Open Registration", type: "start" },
+  { date: "TBA", title: "Open Registration", type: "start" },
   { date: "18 October 2025", title: "Day 0" },
   { date: "22 October 2025", title: "Day 1" },
   { date: "24 October 2025", title: "Day 2" },
