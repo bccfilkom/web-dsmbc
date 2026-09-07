@@ -51,10 +51,10 @@ export default function AboutPage() {
               <div className="flex flex-col gap-5 lg:gap-10">
                 <div className="flex flex-col gap-3">
                   <Label text="Data Science" className="bg-orange-500 bg-opacity-20 text-orange-500 text-xs lg:text-sm"/>
-                  <h1 className="font-semibold text-3xl lg:text-5xl text-slate-700">Data Science Mini Bootcamp 2025</h1>
-                  <h2 className="font-medium text-xl lg:text-2xl text-slate-700">&quot;Data Detective: Uncovering Truths with Data&quot;</h2>
+                  <h1 className="font-semibold text-3xl lg:text-5xl text-slate-700">Data Science Mini Bootcamp 2026</h1>
+                  <h2 className="font-medium text-xl lg:text-2xl text-slate-700">&quot;Data Odyssey: A Journey from Data to Intelligence&quot;</h2>
                 </div>
-                <p className="font-medium text-base lg:text-xl text-gray-600">Explore the world of Data Science and learn the steps to process, analyze, and predict from data. In these 3 days, you will experience firsthand how data can be transformed into real insights and solutions.</p>
+                <p className="font-medium text-base lg:text-xl text-gray-600">Embark on a transformative journey through “A Hero’s Odyssey,” where every participant becomes a traveler on an epic quest to grow into a Data Science professional. Along the journey, you will build essential technical skills, strengthen your problem-solving mindset, and develop the capabilities needed to navigate the world of Data Science.</p>
                 <Button variant="secondary" className="w-36 h-12" onClick={() => handleClickScroll("countdown")}>
                   Get Started
                 </Button>
@@ -69,13 +69,13 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-6 lg:gap-10">
             <CountdownSection 
-              closeRegistration={new Date("2025-10-18T00:00:00")}
+              closeRegistration={new Date("2026-10-10T00:00:00")}
               onComplete={() => {}}
             />
             <div className="flex gap-4 items-center justify-center text-gray-400 font-semibold text-sm">
               <div className="flex gap-1 items-center">
                 <BiCalendar size={24} />
-                <p>18 OKTOBER 2025</p>
+                <p>10 OKTOBER 2026</p>
               </div>
               <div className="flex gap-1 items-center">
                 <BiTime size={24}/>
@@ -100,10 +100,10 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-5 justify-center">
             <h1 className="font-semibold text-2xl lg:text-4xl text-slate-700 text-center">
-              About <span className="text-orange-500">Data Science</span> Mini <br /> Bootcamp 2025
+              About <span className="text-orange-500">Data Science</span> Mini <br /> Bootcamp 2026
             </h1>
             <p className="font-medium text-base lg:text-xl text-gray-600 text-center mx-auto lg:mx-64">
-              <span className="font-bold">Data Science Mini Bootcamp 2025 &quot;Data Detective:</span> Uncovering Truths with Data&quot; is a 3-day intensive program that will give you insights into Data Science and allow you to practice it directly. In this mini bootcamp, you will learn how to use Python and Pandas to process, analyze, and visualize data. You will also learn how to predict data using various machine learning models.
+              <span className="font-bold">Explore the world of Data Science through &quot;Data Odyssey:</span> A Journey from Data to Intelligence,&quot; a project-based mini bootcamp organized by the Data Science Department of Basic Computing Community, Faculty of Computer Science. Over these 2 weeks, you will experience firsthand how data is processed, analyzed, and transformed into meaningful insights while developing practical skills in data analysis and machine learning through real-world projects.
             </p>
           </div>
         </div>
