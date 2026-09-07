@@ -16,7 +16,7 @@ import { withBasePath } from "@/shared/utils/imagePath";
 
 export default function AboutPage() {
   const handleClickRegister = () => {
-    window.open("https://bccfilkom.ub.ac.id/event/01K6FT36RTF1GXARMB7S06AZN1?type=workshop", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfrYhzfidJe7IktQKQjDJbgG39XwlvLuzQBfi-NjYMpwYguWA/viewform", "_blank");
     setTimeout(() => {
       return;
     }, 1000);
@@ -51,10 +51,10 @@ export default function AboutPage() {
               <div className="flex flex-col gap-5 lg:gap-10">
                 <div className="flex flex-col gap-3">
                   <Label text="Data Science" className="bg-orange-500 bg-opacity-20 text-orange-500 text-xs lg:text-sm"/>
-                  <h1 className="font-semibold text-3xl lg:text-5xl text-slate-700">Data Science Mini Bootcamp 2025</h1>
-                  <h2 className="font-medium text-xl lg:text-2xl text-slate-700">&quot;Data Detective: Uncovering Truths with Data&quot;</h2>
+                  <h1 className="font-semibold text-3xl lg:text-5xl text-slate-700">Data Science Mini Bootcamp 2026</h1>
+                  <h2 className="font-medium text-xl lg:text-2xl text-slate-700">&quot;Data Odyssey: A Journey from Data to Intelligence&quot;</h2>
                 </div>
-                <p className="font-medium text-base lg:text-xl text-gray-600">Explore the world of Data Science and learn the steps to process, analyze, and predict from data. In these 3 days, you will experience firsthand how data can be transformed into real insights and solutions.</p>
+                <p className="font-medium text-base lg:text-xl text-gray-600">Embark on a transformative journey through “A Hero’s Odyssey,” where every participant becomes a traveler on an epic quest to grow into a Data Science professional. Along the journey, you will build essential technical skills, strengthen your problem-solving mindset, and develop the capabilities needed to navigate the world of Data Science.</p>
                 <Button variant="secondary" className="w-36 h-12" onClick={() => handleClickScroll("countdown")}>
                   Get Started
                 </Button>
@@ -69,13 +69,13 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-6 lg:gap-10">
             <CountdownSection 
-              closeRegistration={new Date("2025-10-18T00:00:00")}
+              closeRegistration={new Date("2026-10-10T00:00:00")}
               onComplete={() => {}}
             />
             <div className="flex gap-4 items-center justify-center text-gray-400 font-semibold text-sm">
               <div className="flex gap-1 items-center">
                 <BiCalendar size={24} />
-                <p>18 OKTOBER 2025</p>
+                <p>10 OKTOBER 2026</p>
               </div>
               <div className="flex gap-1 items-center">
                 <BiTime size={24}/>
@@ -100,10 +100,10 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col gap-5 justify-center">
             <h1 className="font-semibold text-2xl lg:text-4xl text-slate-700 text-center">
-              About <span className="text-orange-500">Data Science</span> Mini <br /> Bootcamp 2025
+              About <span className="text-orange-500">Data Science</span> Mini <br /> Bootcamp 2026
             </h1>
             <p className="font-medium text-base lg:text-xl text-gray-600 text-center mx-auto lg:mx-64">
-              <span className="font-bold">Data Science Mini Bootcamp 2025 &quot;Data Detective:</span> Uncovering Truths with Data&quot; is a 3-day intensive program that will give you insights into Data Science and allow you to practice it directly. In this mini bootcamp, you will learn how to use Python and Pandas to process, analyze, and visualize data. You will also learn how to predict data using various machine learning models.
+              <span className="font-bold">Explore the world of Data Science through &quot;Data Odyssey:</span> A Journey from Data to Intelligence,&quot; a project-based mini bootcamp organized by the Data Science Department of Basic Computing Community, Faculty of Computer Science. Over these 2 weeks, you will experience firsthand how data is processed, analyzed, and transformed into meaningful insights while developing practical skills in data analysis and machine learning through real-world projects.
             </p>
           </div>
         </div>
@@ -121,50 +121,84 @@ export default function AboutPage() {
             <h1 className="text-center font-semibold text-base lg:text-xl">LEARNING PATH</h1>
             <hr className="border-light_blue border-1 w-16"/>
           </div>
-          <div className="flex flex-col lg:flex-row gap-2 md:gap-3 lg:gap-5 justify-center">
-            <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
-              <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
-                <Image
-                  src={withBasePath("/images/startup.svg")}
-                  alt="-"
-                  className="justify-center lg:w-12 lg:h-12"
-                  width={24}
-                  height={24}
-                />
+          <div className="flex flex-col gap-2 md:gap-3 lg:gap-5">
+            <div className="flex flex-col lg:grid lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 justify-items-center">
+              <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
+                <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                  <Image
+                    src={withBasePath("/images/startup.svg")}
+                    alt="-"
+                    className="justify-center lg:w-12 lg:h-12"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
+                  <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 0</h1>
+                  <p className="font-medium text-sm lg:text-2xl text-gray-600">The Case Begins</p>
+                </div>
               </div>
-              <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 0</h1>
-                <p className="font-medium text-sm lg:text-2xl text-gray-600">The Case Begins</p>
+              <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
+                <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                  <Image
+                    src={withBasePath("/images/folder-search.svg")}
+                    alt="-"
+                    className="justify-center lg:w-12 lg:h-12"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
+                  <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 1</h1>
+                  <p className="font-medium text-sm lg:text-2xl text-gray-600">Uncovering Clues in the Data Through Investigation</p>
+                </div>
+              </div>
+              <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
+                <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                  <Image
+                    src={withBasePath("/images/search.svg")}
+                    alt="-"
+                    className="justify-center lg:w-12 lg:h-12"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
+                  <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 2</h1>
+                  <p className="font-medium text-sm lg:text-2xl text-gray-600">Preparing the Evidence for Investigation</p>
+                </div>
               </div>
             </div>
-            <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
-              <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
-                <Image
-                  src={withBasePath("/images/folder-search.svg")}
-                  alt="-"
-                  className="justify-center lg:w-12 lg:h-12"
-                  width={24}
-                  height={24}
-                />
+            <div className="flex flex-col lg:flex-row gap-2 md:gap-3 lg:gap-5 justify-center">
+              <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
+                <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                  <Image
+                    src={withBasePath("/images/puzzle-piece.svg")}
+                    alt="-"
+                    className="justify-center lg:w-12 lg:h-12"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
+                  <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 3</h1>
+                  <p className="font-medium text-sm lg:text-2xl text-gray-600">Solving the Mystery Through Predictive Modeling</p>
+                </div>
               </div>
-              <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 1</h1>
-                <p className="font-medium text-sm lg:text-2xl text-gray-600">Uncovering Clues in the Data Through Investigation</p>
-              </div>
-            </div>
-            <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
-              <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
-                <Image
-                  src={withBasePath("/images/puzzle-piece.svg")}
-                  alt="-"
-                  className="justify-center lg:w-12 lg:h-12"
-                  width={24}
-                  height={24}
-                />
-              </div>
-              <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
-                <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 2</h1>
-                <p className="font-medium text-sm lg:text-2xl text-gray-600">Solving the Mystery by Making Predictions with Data</p>
+              <div className="flex lg:flex-col gap-6 lg:gap-8 items-center p-6 lg:px-10 lg:py-20 border-[1px] rounded-xl lg:rounded-[32px] w-full h-[105px] lg:w-[400px] lg:h-[496px] bg-neutral-50 border-gray-200">
+                <div className="p-5 rounded-full bg-gradient-to-r from-gray-200 to-white">
+                  <Image
+                    src={withBasePath("/images/presentation.svg")}
+                    alt="-"
+                    className="justify-center lg:w-12 lg:h-12"
+                    width={24}
+                    height={24}
+                  />
+                </div>
+                <div className="flex flex-col gap-1 lg:gap-4 items-start lg:items-center justify-start lg:justify-center text-left lg:text-center">
+                  <h1 className="font-medium text-xl lg:text-4xl text-slate-700">DAY 4</h1>
+                  <p className="font-medium text-sm lg:text-2xl text-gray-600">Revealing the Answer: The Final Presentation</p>
+                </div>
               </div>
             </div>
           </div>
@@ -189,16 +223,18 @@ export default function AboutPage() {
           </div>
           <BenefitSection/>
         </div>
-        <div className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">
-          <div className="flex gap-4 items-center justify-end text-light_blue">
-            <hr className="border-light_blue border-1 w-16"/>
-            <h1 className="text-center font-semibold text-base lg:text-xl">DSMBC Gallery</h1>
-          </div>
-          <h1 className="text-right font-semibold text-2xl lg:text-4xl text-slate-700">
-            Last Year&apos;s <br /><span className="text-orange-500">DSMBC</span>
-          </h1>
-          <Gallery></Gallery>
-        </div>
+
+        {/* README: Not NEEDED in 2026 */}
+        {/*<div className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">*/}
+        {/*  <div className="flex gap-4 items-center justify-end text-light_blue">*/}
+        {/*    <hr className="border-light_blue border-1 w-16"/>*/}
+        {/*    <h1 className="text-center font-semibold text-base lg:text-xl">DSMBC Gallery</h1>*/}
+        {/*  </div>*/}
+        {/*  <h1 className="text-right font-semibold text-2xl lg:text-4xl text-slate-700">*/}
+        {/*    Last Year&apos;s <br /><span className="text-orange-500">DSMBC</span>*/}
+        {/*  </h1>*/}
+        {/*  <Gallery></Gallery>*/}
+        {/*</div>*/}
       </div>
       <div className="flex max-w-screen mb-28 lg:mb-44 px-6 py-10 lg:px-48 lg:py-20 relative bg-gradient-to-b from-[#143045] to-[#183F5C]">
           <Image
@@ -225,21 +261,23 @@ export default function AboutPage() {
             <Button variant="secondary" className="mt-10" onClick={handleClickRegister}>Register Now →</Button>
           </div>
       </div>
-      <div className="px-6 md:px-24">
-        <div className="flex flex-col gap-20 mb-44">
-          <div className="flex flex-col gap-8 justify-center">
-            <div className="flex gap-4 items-center justify-center text-light_blue">
-              <hr className="border-light_blue border-1 w-16"/>
-              <h1 className="text-center font-semibold text-base lg:text-xl">FAQ&apos;S</h1>
-              <hr className="border-light_blue border-1 w-16"/>
-            </div>
-            <h1 className="text-center font-semibold text-2xl lg:text-4xl text-slate-700">Have <span className="text-orange-500">questions?</span> We&apos;re here to help</h1>
-          </div>
-          <div className="justify-center mx-auto">
-            <AccordionFaq />
-          </div>
-        </div>
-      </div>
+
+      {/* README: Not NEEDED in 2026 */}
+      {/*<div className="px-6 md:px-24">*/}
+      {/*  <div className="flex flex-col gap-20 mb-44">*/}
+      {/*    <div className="flex flex-col gap-8 justify-center">*/}
+      {/*      <div className="flex gap-4 items-center justify-center text-light_blue">*/}
+      {/*        <hr className="border-light_blue border-1 w-16"/>*/}
+      {/*        <h1 className="text-center font-semibold text-base lg:text-xl">FAQ&apos;S</h1>*/}
+      {/*        <hr className="border-light_blue border-1 w-16"/>*/}
+      {/*      </div>*/}
+      {/*      <h1 className="text-center font-semibold text-2xl lg:text-4xl text-slate-700">Have <span className="text-orange-500">questions?</span> We&apos;re here to help</h1>*/}
+      {/*    </div>*/}
+      {/*    <div className="justify-center mx-auto">*/}
+      {/*      <AccordionFaq />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <BackgroundDecorations />
       <Footer />
     </>
