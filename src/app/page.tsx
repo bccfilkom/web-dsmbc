@@ -16,7 +16,7 @@ import { withBasePath } from "@/shared/utils/imagePath";
 
 export default function AboutPage() {
   const handleClickRegister = () => {
-    window.open("https://bccfilkom.ub.ac.id/event/01K6FT36RTF1GXARMB7S06AZN1?type=workshop", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfrYhzfidJe7IktQKQjDJbgG39XwlvLuzQBfi-NjYMpwYguWA/viewform", "_blank");
     setTimeout(() => {
       return;
     }, 1000);
@@ -189,16 +189,18 @@ export default function AboutPage() {
           </div>
           <BenefitSection/>
         </div>
-        <div className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">
-          <div className="flex gap-4 items-center justify-end text-light_blue">
-            <hr className="border-light_blue border-1 w-16"/>
-            <h1 className="text-center font-semibold text-base lg:text-xl">DSMBC Gallery</h1>
-          </div>
-          <h1 className="text-right font-semibold text-2xl lg:text-4xl text-slate-700">
-            Last Year&apos;s <br /><span className="text-orange-500">DSMBC</span>
-          </h1>
-          <Gallery></Gallery>
-        </div>
+
+        {/* README: Not NEEDED in 2026 */}
+        {/*<div className="flex flex-col gap-8 lg:gap-10 mb-28 lg:mb-44">*/}
+        {/*  <div className="flex gap-4 items-center justify-end text-light_blue">*/}
+        {/*    <hr className="border-light_blue border-1 w-16"/>*/}
+        {/*    <h1 className="text-center font-semibold text-base lg:text-xl">DSMBC Gallery</h1>*/}
+        {/*  </div>*/}
+        {/*  <h1 className="text-right font-semibold text-2xl lg:text-4xl text-slate-700">*/}
+        {/*    Last Year&apos;s <br /><span className="text-orange-500">DSMBC</span>*/}
+        {/*  </h1>*/}
+        {/*  <Gallery></Gallery>*/}
+        {/*</div>*/}
       </div>
       <div className="flex max-w-screen mb-28 lg:mb-44 px-6 py-10 lg:px-48 lg:py-20 relative bg-gradient-to-b from-[#143045] to-[#183F5C]">
           <Image
@@ -225,21 +227,23 @@ export default function AboutPage() {
             <Button variant="secondary" className="mt-10" onClick={handleClickRegister}>Register Now →</Button>
           </div>
       </div>
-      <div className="px-6 md:px-24">
-        <div className="flex flex-col gap-20 mb-44">
-          <div className="flex flex-col gap-8 justify-center">
-            <div className="flex gap-4 items-center justify-center text-light_blue">
-              <hr className="border-light_blue border-1 w-16"/>
-              <h1 className="text-center font-semibold text-base lg:text-xl">FAQ&apos;S</h1>
-              <hr className="border-light_blue border-1 w-16"/>
-            </div>
-            <h1 className="text-center font-semibold text-2xl lg:text-4xl text-slate-700">Have <span className="text-orange-500">questions?</span> We&apos;re here to help</h1>
-          </div>
-          <div className="justify-center mx-auto">
-            <AccordionFaq />
-          </div>
-        </div>
-      </div>
+
+      {/* README: Not NEEDED in 2026 */}
+      {/*<div className="px-6 md:px-24">*/}
+      {/*  <div className="flex flex-col gap-20 mb-44">*/}
+      {/*    <div className="flex flex-col gap-8 justify-center">*/}
+      {/*      <div className="flex gap-4 items-center justify-center text-light_blue">*/}
+      {/*        <hr className="border-light_blue border-1 w-16"/>*/}
+      {/*        <h1 className="text-center font-semibold text-base lg:text-xl">FAQ&apos;S</h1>*/}
+      {/*        <hr className="border-light_blue border-1 w-16"/>*/}
+      {/*      </div>*/}
+      {/*      <h1 className="text-center font-semibold text-2xl lg:text-4xl text-slate-700">Have <span className="text-orange-500">questions?</span> We&apos;re here to help</h1>*/}
+      {/*    </div>*/}
+      {/*    <div className="justify-center mx-auto">*/}
+      {/*      <AccordionFaq />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       <BackgroundDecorations />
       <Footer />
     </>
