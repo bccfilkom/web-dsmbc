@@ -11,7 +11,8 @@ const CLOSE_REGISTRATION = new Date("2026-10-10T00:00:00+07:00");
 
 const CountdownSection = () => {
   const handleClickDownload = () => {
-    window.open(encodeURI(GUIDEBOOK_URL), "_blank", "noopener,noreferrer");
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+    window.open(encodeURI(`${basePath}${GUIDEBOOK_URL}`), "_blank", "noopener,noreferrer");
   };
 
   const handleClickRegister = () => {
