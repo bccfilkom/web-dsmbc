@@ -2,7 +2,7 @@
 
 ## Tentang DSMBC
 
-**Data Science Mini Bootcamp (DSMBC)** adalah mini bootcamp berbasis proyek yang diselenggarakan oleh **Departemen Data Science, Basic Computing Community (BCS), Fakultas Ilmu Komputer**.
+**Data Science Mini Bootcamp (DSMBC)** adalah mini bootcamp berbasis proyek yang diselenggarakan oleh **Departemen Data Science, Basic Computing Community (BCC), Fakultas Ilmu Komputer**.
 
 Melalui tema **“Data Odyssey: A Journey from Data to Intelligence”**, DSMBC mengajak peserta menjelajahi dunia Data Science secara praktis. Selama dua minggu, peserta akan mempelajari bagaimana data diproses, dianalisis, dan diubah menjadi insight yang bermakna melalui proyek-proyek dunia nyata.
 
