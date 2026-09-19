@@ -1,16 +1,8 @@
-const isProd = process.env.NODE_ENV === "production";
+import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
+  reactCompiler: true,
   output: "standalone",
-  reactStrictMode: true,
-  basePath: isProd ? "/dsmbc" : "",
-  assetPrefix: isProd ? "/dsmbc/" : "",
-  images: {
-    unoptimized: true,
-  },
-  publicRuntimeConfig: {
-    basePath: isProd ? "/dsmbc" : "",
-  },
 };
 
 export default nextConfig;
